@@ -6,11 +6,12 @@
 //
 
 import UIKit
-
+import CoreBluetooth
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    var deviceDiscovery: BluetoothDeviceDiscovery = BluetoothDeviceDiscovery(deviceName: UIDevice.current.name)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

@@ -35,14 +35,14 @@ class DataMapViewController: UIViewController,MKMapViewDelegate {
     func showMapData() {
         let latitude = viewModel?.latitude ?? 0.0
         let longitude = viewModel?.longitude ?? 0.0
-        var theSpan:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latitude, longitudeDelta: longitude)
+        let theSpan:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latitude, longitudeDelta: longitude)
         
-        var pointLocation = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let pointLocation = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
 
-        var region:MKCoordinateRegion = MKCoordinateRegion(center: pointLocation, span: theSpan)
+        let region:MKCoordinateRegion = MKCoordinateRegion(center: pointLocation, span: theSpan)
         mapView?.setRegion(region, animated: true)
 
-        var pinLocation = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let pinLocation = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
             //CLLocationCoordinate2D(latitude: viewModel?.latitude, longitude: viewModel?.longitude)
         
         objectAnnotation.coordinate = pinLocation

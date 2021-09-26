@@ -18,7 +18,6 @@ class APIService {
             completionBlock?(nil, nil, NSError(domain: "-111", code: -111, userInfo: nil))
             return
         }
-        
         var request = URLRequest(url: url, timeoutInterval: 60.0)
         request.httpMethod = endpoint.httpMethod.rawValue
         let task = urlSession.dataTask(with: request) {data, response, error in

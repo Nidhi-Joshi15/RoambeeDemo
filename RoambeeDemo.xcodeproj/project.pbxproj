@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		041681992700BB93000BCE0C /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041681982700BB93000BCE0C /* UIStoryboard+Extension.swift */; };
+		041681ED27010BEF000BCE0C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041681EC27010BEF000BCE0C /* ExternalAccessory.framework */; };
 		0492782B2700392C00A44FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492782A2700392C00A44FED /* AppDelegate.swift */; };
 		0492782D2700392C00A44FED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492782C2700392C00A44FED /* SceneDelegate.swift */; };
 		049278322700392C00A44FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049278302700392C00A44FED /* Main.storyboard */; };
@@ -63,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		041681982700BB93000BCE0C /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		041681EA27010BEE000BCE0C /* RoambeeDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RoambeeDemo.entitlements; sourceTree = "<group>"; };
+		041681EC27010BEF000BCE0C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		049278272700392C00A44FED /* RoambeeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoambeeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0492782A2700392C00A44FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0492782C2700392C00A44FED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041681ED27010BEF000BCE0C /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041681EB27010BEE000BCE0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				041681EC27010BEF000BCE0C /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0492781E2700392C00A44FED = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +149,7 @@
 				049278402700393500A44FED /* RoambeeDemoTests */,
 				0492784B2700393500A44FED /* RoambeeDemoUITests */,
 				049278282700392C00A44FED /* Products */,
+				041681EB27010BEE000BCE0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +166,7 @@
 		049278292700392C00A44FED /* RoambeeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				041681EA27010BEE000BCE0C /* RoambeeDemo.entitlements */,
 				0492790827004B6100A44FED /* BlueToothManager */,
 				049278E0270045F300A44FED /* CustomCell */,
 				049278CA2700408600A44FED /* Helper */,
@@ -632,6 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RoambeeDemo/RoambeeDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJG4L3F345;
 				INFOPLIST_FILE = RoambeeDemo/Info.plist;
@@ -652,6 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RoambeeDemo/RoambeeDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJG4L3F345;
 				INFOPLIST_FILE = RoambeeDemo/Info.plist;

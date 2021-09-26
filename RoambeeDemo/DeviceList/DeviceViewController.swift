@@ -22,7 +22,7 @@ class DeviceViewController: UIViewController {
     
     var viewModel: DeviceListViewModel!
     var coordinator: DeviceListCoordinator?
-    var deviceDiscovery: BluetoothDeviceDiscovery = BluetoothDeviceDiscovery(deviceName: UIDevice.current.name)
+    var deviceDiscovery: BluetoothDeviceDiscovery = (UIApplication.shared.delegate as! AppDelegate).deviceDiscovery
     // MARK: - View life cycle
 
     override func viewDidLoad() {
@@ -46,12 +46,18 @@ extension DeviceViewController: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return  0
+        
+        if viewModel.getListCount() == 0 {
+                self.deviceListtableView?.setEmptyMessage("Scanning nearby devices...")
+            } else {
+                self.deviceListtableView?.restore()
+            }
+        return viewModel.getListCount()
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
 //        let name = bluetoothManager?.peripherals
-        cell.textLabel?.text = "name"
+        cell.textLabel?.text = "1"
         return cell
     }
   

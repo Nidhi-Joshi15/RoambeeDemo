@@ -35,9 +35,11 @@ class BluetoothDeviceDiscovery: NSObject {
     private var peripheralManager: CBPeripheralManager!
 
     // Make a queue we can run all of the events off
-    private let queue = DispatchQueue(label: "live.demo.bluetooth-discovery",
-                                      qos: .background, attributes: .concurrent,
-                                      autoreleaseFrequency: .workItem, target: nil)
+    
+    private let queue = DispatchQueue.main
+//    private let queue = DispatchQueue(label: "live.demo.bluetooth-discovery",
+//                                      qos: .background, attributes: .concurrent,
+//                                      autoreleaseFrequency: .workItem, target: nil)
 
     /// Create a new instance of this discovery class.
     /// Will start scanning and advertising immediately
@@ -112,6 +114,14 @@ extension BluetoothDeviceDiscovery: CBCentralManagerDelegate {
             self?.updateDeviceList(with: device)
         }
     }
+    func centralManager(_ central: CBCentralManager, connectionEventDidOccur event: CBConnectionEvent, for peripheral: CBPeripheral) {
+        print("connection")
+    }
+    func retrievePeripherals(withIdentifiers identifiers: [UUID]) -> [CBPeripheral] {
+        print(identifiers)
+        return []
+    }
+    
 }
 
 extension BluetoothDeviceDiscovery: CBPeripheralManagerDelegate {
