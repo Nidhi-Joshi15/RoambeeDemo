@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041681992700BB93000BCE0C /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041681982700BB93000BCE0C /* UIStoryboard+Extension.swift */; };
+		0492782B2700392C00A44FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492782A2700392C00A44FED /* AppDelegate.swift */; };
+		0492782D2700392C00A44FED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492782C2700392C00A44FED /* SceneDelegate.swift */; };
+		049278322700392C00A44FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049278302700392C00A44FED /* Main.storyboard */; };
+		049278342700393400A44FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049278332700393400A44FED /* Assets.xcassets */; };
+		049278372700393400A44FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049278352700393400A44FED /* LaunchScreen.storyboard */; };
+		049278422700393500A44FED /* RoambeeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278412700393500A44FED /* RoambeeDemoTests.swift */; };
+		0492784D2700393500A44FED /* RoambeeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492784C2700393500A44FED /* RoambeeDemoUITests.swift */; };
+		0492785F2700394D00A44FED /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492785E2700394D00A44FED /* AppCoordinator.swift */; };
+		049278672700396800A44FED /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278662700396800A44FED /* TabCoordinator.swift */; };
+		04927870270039E800A44FED /* DeviceListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492786F270039E800A44FED /* DeviceListCoordinator.swift */; };
+		0492787827003A3600A44FED /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492787727003A3600A44FED /* Screens.swift */; };
+		0492787D27003A5300A44FED /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492787C27003A5300A44FED /* DeviceViewController.swift */; };
+		0492788227003AB800A44FED /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492788127003AB800A44FED /* DeviceListViewModel.swift */; };
+		0492788727003AF000A44FED /* DataListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492788627003AF000A44FED /* DataListViewController.swift */; };
+		0492788C27003B0700A44FED /* DataListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492788B27003B0700A44FED /* DataListViewModel.swift */; };
+		0492789127003B3100A44FED /* DataListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492789027003B3100A44FED /* DataListCoordinator.swift */; };
+		0492789627003C0900A44FED /* DataMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492789527003C0900A44FED /* DataMapViewController.swift */; };
+		0492789B27003C1300A44FED /* DataMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492789A27003C1300A44FED /* DataMapViewModel.swift */; };
+		049278A027003C2200A44FED /* DataMapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492789F27003C2200A44FED /* DataMapCoordinator.swift */; };
+		049278A627003FD600A44FED /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278A527003FD600A44FED /* DataModel.swift */; };
+		049278AE27003FFA00A44FED /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278AD27003FFA00A44FED /* DeviceModel.swift */; };
+		049278B42700402700A44FED /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278B32700402700A44FED /* APIEndPoint.swift */; };
+		049278BC2700404200A44FED /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278BB2700404200A44FED /* APIService.swift */; };
+		049278C12700406000A44FED /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278C02700406000A44FED /* APIResponse.swift */; };
+		049278C62700407300A44FED /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278C52700407300A44FED /* APIError.swift */; };
+		049278CC2700409300A44FED /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278CB2700409300A44FED /* Reachability.swift */; };
+		049278DC2700456B00A44FED /* UITableview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278DB2700456B00A44FED /* UITableview+Extension.swift */; };
+		049278F0270046DD00A44FED /* DeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049278EE270046DD00A44FED /* DeviceCell.xib */; };
+		049278F1270046DD00A44FED /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278EF270046DD00A44FED /* DeviceCell.swift */; };
+		049278F7270046E800A44FED /* DataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049278F5270046E800A44FED /* DataCell.xib */; };
+		049278F8270046E800A44FED /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278F6270046E800A44FED /* DataCell.swift */; };
+		049278FD2700478D00A44FED /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049278FC2700478D00A44FED /* Constant.swift */; };
+		049279152700516B00A44FED /* BluetoothMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049279142700516B00A44FED /* BluetoothMaster.swift */; };
+		0492791A2700524C00A44FED /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049279192700524C00A44FED /* Device.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0492783E2700393500A44FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0492781F2700392C00A44FED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049278262700392C00A44FED;
+			remoteInfo = RoambeeDemo;
+		};
+		049278492700393500A44FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0492781F2700392C00A44FED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049278262700392C00A44FED;
+			remoteInfo = RoambeeDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041681982700BB93000BCE0C /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		049278272700392C00A44FED /* RoambeeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoambeeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0492782A2700392C00A44FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0492782C2700392C00A44FED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		049278312700392C00A44FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		049278332700393400A44FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		049278362700393400A44FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		049278382700393400A44FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0492783D2700393500A44FED /* RoambeeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoambeeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		049278412700393500A44FED /* RoambeeDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoambeeDemoTests.swift; sourceTree = "<group>"; };
+		049278432700393500A44FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049278482700393500A44FED /* RoambeeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoambeeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0492784C2700393500A44FED /* RoambeeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoambeeDemoUITests.swift; sourceTree = "<group>"; };
+		0492784E2700393500A44FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0492785E2700394D00A44FED /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		049278662700396800A44FED /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		0492786F270039E800A44FED /* DeviceListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListCoordinator.swift; sourceTree = "<group>"; };
+		0492787727003A3600A44FED /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
+		0492787C27003A5300A44FED /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		0492788127003AB800A44FED /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
+		0492788627003AF000A44FED /* DataListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListViewController.swift; sourceTree = "<group>"; };
+		0492788B27003B0700A44FED /* DataListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListViewModel.swift; sourceTree = "<group>"; };
+		0492789027003B3100A44FED /* DataListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListCoordinator.swift; sourceTree = "<group>"; };
+		0492789527003C0900A44FED /* DataMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapViewController.swift; sourceTree = "<group>"; };
+		0492789A27003C1300A44FED /* DataMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapViewModel.swift; sourceTree = "<group>"; };
+		0492789F27003C2200A44FED /* DataMapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapCoordinator.swift; sourceTree = "<group>"; };
+		049278A527003FD600A44FED /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		049278AD27003FFA00A44FED /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
+		049278B32700402700A44FED /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		049278BB2700404200A44FED /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		049278C02700406000A44FED /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		049278C52700407300A44FED /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		049278CB2700409300A44FED /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		049278DB2700456B00A44FED /* UITableview+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableview+Extension.swift"; sourceTree = "<group>"; };
+		049278EE270046DD00A44FED /* DeviceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceCell.xib; sourceTree = "<group>"; };
+		049278EF270046DD00A44FED /* DeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		049278F5270046E800A44FED /* DataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataCell.xib; sourceTree = "<group>"; };
+		049278F6270046E800A44FED /* DataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		049278FC2700478D00A44FED /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		049279142700516B00A44FED /* BluetoothMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothMaster.swift; sourceTree = "<group>"; };
+		049279192700524C00A44FED /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		049278242700392C00A44FED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0492783A2700393500A44FED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049278452700393500A44FED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0492781E2700392C00A44FED = {
+			isa = PBXGroup;
+			children = (
+				049278292700392C00A44FED /* RoambeeDemo */,
+				049278402700393500A44FED /* RoambeeDemoTests */,
+				0492784B2700393500A44FED /* RoambeeDemoUITests */,
+				049278282700392C00A44FED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		049278282700392C00A44FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				049278272700392C00A44FED /* RoambeeDemo.app */,
+				0492783D2700393500A44FED /* RoambeeDemoTests.xctest */,
+				049278482700393500A44FED /* RoambeeDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		049278292700392C00A44FED /* RoambeeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0492790827004B6100A44FED /* BlueToothManager */,
+				049278E0270045F300A44FED /* CustomCell */,
+				049278CA2700408600A44FED /* Helper */,
+				049278B22700400B00A44FED /* Service */,
+				049278A427003FCB00A44FED /* Model */,
+				0492786E270039C000A44FED /* DataMapView */,
+				0492786D270039B900A44FED /* DataList */,
+				0492786C270039A900A44FED /* DeviceList */,
+				0492785D2700393A00A44FED /* AppCoordinator */,
+				0492782A2700392C00A44FED /* AppDelegate.swift */,
+				0492782C2700392C00A44FED /* SceneDelegate.swift */,
+				049278302700392C00A44FED /* Main.storyboard */,
+				049278332700393400A44FED /* Assets.xcassets */,
+				049278352700393400A44FED /* LaunchScreen.storyboard */,
+				049278382700393400A44FED /* Info.plist */,
+			);
+			path = RoambeeDemo;
+			sourceTree = "<group>";
+		};
+		049278402700393500A44FED /* RoambeeDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				049278412700393500A44FED /* RoambeeDemoTests.swift */,
+				049278432700393500A44FED /* Info.plist */,
+			);
+			path = RoambeeDemoTests;
+			sourceTree = "<group>";
+		};
+		0492784B2700393500A44FED /* RoambeeDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0492784C2700393500A44FED /* RoambeeDemoUITests.swift */,
+				0492784E2700393500A44FED /* Info.plist */,
+			);
+			path = RoambeeDemoUITests;
+			sourceTree = "<group>";
+		};
+		0492785D2700393A00A44FED /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0492785E2700394D00A44FED /* AppCoordinator.swift */,
+				049278662700396800A44FED /* TabCoordinator.swift */,
+				0492787727003A3600A44FED /* Screens.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		0492786C270039A900A44FED /* DeviceList */ = {
+			isa = PBXGroup;
+			children = (
+				0492786F270039E800A44FED /* DeviceListCoordinator.swift */,
+				0492787C27003A5300A44FED /* DeviceViewController.swift */,
+				0492788127003AB800A44FED /* DeviceListViewModel.swift */,
+			);
+			path = DeviceList;
+			sourceTree = "<group>";
+		};
+		0492786D270039B900A44FED /* DataList */ = {
+			isa = PBXGroup;
+			children = (
+				0492788627003AF000A44FED /* DataListViewController.swift */,
+				0492788B27003B0700A44FED /* DataListViewModel.swift */,
+				0492789027003B3100A44FED /* DataListCoordinator.swift */,
+			);
+			path = DataList;
+			sourceTree = "<group>";
+		};
+		0492786E270039C000A44FED /* DataMapView */ = {
+			isa = PBXGroup;
+			children = (
+				0492789527003C0900A44FED /* DataMapViewController.swift */,
+				0492789A27003C1300A44FED /* DataMapViewModel.swift */,
+				0492789F27003C2200A44FED /* DataMapCoordinator.swift */,
+			);
+			path = DataMapView;
+			sourceTree = "<group>";
+		};
+		049278A427003FCB00A44FED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				049278A527003FD600A44FED /* DataModel.swift */,
+				049278AD27003FFA00A44FED /* DeviceModel.swift */,
+				049279192700524C00A44FED /* Device.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		049278B22700400B00A44FED /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				049278B32700402700A44FED /* APIEndPoint.swift */,
+				049278BB2700404200A44FED /* APIService.swift */,
+				049278C02700406000A44FED /* APIResponse.swift */,
+				049278C52700407300A44FED /* APIError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		049278CA2700408600A44FED /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				049278CB2700409300A44FED /* Reachability.swift */,
+				049278DB2700456B00A44FED /* UITableview+Extension.swift */,
+				049278FC2700478D00A44FED /* Constant.swift */,
+				041681982700BB93000BCE0C /* UIStoryboard+Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		049278E0270045F300A44FED /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				049278E22700460400A44FED /* DeviceCell */,
+				049278E1270045FE00A44FED /* DataCell */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		049278E1270045FE00A44FED /* DataCell */ = {
+			isa = PBXGroup;
+			children = (
+				049278F6270046E800A44FED /* DataCell.swift */,
+				049278F5270046E800A44FED /* DataCell.xib */,
+			);
+			path = DataCell;
+			sourceTree = "<group>";
+		};
+		049278E22700460400A44FED /* DeviceCell */ = {
+			isa = PBXGroup;
+			children = (
+				049278EF270046DD00A44FED /* DeviceCell.swift */,
+				049278EE270046DD00A44FED /* DeviceCell.xib */,
+			);
+			path = DeviceCell;
+			sourceTree = "<group>";
+		};
+		0492790827004B6100A44FED /* BlueToothManager */ = {
+			isa = PBXGroup;
+			children = (
+				049279142700516B00A44FED /* BluetoothMaster.swift */,
+			);
+			path = BlueToothManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		049278262700392C00A44FED /* RoambeeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049278512700393500A44FED /* Build configuration list for PBXNativeTarget "RoambeeDemo" */;
+			buildPhases = (
+				049278232700392C00A44FED /* Sources */,
+				049278242700392C00A44FED /* Frameworks */,
+				049278252700392C00A44FED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoambeeDemo;
+			productName = RoambeeDemo;
+			productReference = 049278272700392C00A44FED /* RoambeeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0492783C2700393500A44FED /* RoambeeDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049278542700393500A44FED /* Build configuration list for PBXNativeTarget "RoambeeDemoTests" */;
+			buildPhases = (
+				049278392700393500A44FED /* Sources */,
+				0492783A2700393500A44FED /* Frameworks */,
+				0492783B2700393500A44FED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0492783F2700393500A44FED /* PBXTargetDependency */,
+			);
+			name = RoambeeDemoTests;
+			productName = RoambeeDemoTests;
+			productReference = 0492783D2700393500A44FED /* RoambeeDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		049278472700393500A44FED /* RoambeeDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049278572700393500A44FED /* Build configuration list for PBXNativeTarget "RoambeeDemoUITests" */;
+			buildPhases = (
+				049278442700393500A44FED /* Sources */,
+				049278452700393500A44FED /* Frameworks */,
+				049278462700393500A44FED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0492784A2700393500A44FED /* PBXTargetDependency */,
+			);
+			name = RoambeeDemoUITests;
+			productName = RoambeeDemoUITests;
+			productReference = 049278482700393500A44FED /* RoambeeDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0492781F2700392C00A44FED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					049278262700392C00A44FED = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					0492783C2700393500A44FED = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 049278262700392C00A44FED;
+					};
+					049278472700393500A44FED = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 049278262700392C00A44FED;
+					};
+				};
+			};
+			buildConfigurationList = 049278222700392C00A44FED /* Build configuration list for PBXProject "RoambeeDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0492781E2700392C00A44FED;
+			productRefGroup = 049278282700392C00A44FED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				049278262700392C00A44FED /* RoambeeDemo */,
+				0492783C2700393500A44FED /* RoambeeDemoTests */,
+				049278472700393500A44FED /* RoambeeDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		049278252700392C00A44FED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049278372700393400A44FED /* LaunchScreen.storyboard in Resources */,
+				049278342700393400A44FED /* Assets.xcassets in Resources */,
+				049278322700392C00A44FED /* Main.storyboard in Resources */,
+				049278F7270046E800A44FED /* DataCell.xib in Resources */,
+				049278F0270046DD00A44FED /* DeviceCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0492783B2700393500A44FED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049278462700393500A44FED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		049278232700392C00A44FED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0492788727003AF000A44FED /* DataListViewController.swift in Sources */,
+				049278BC2700404200A44FED /* APIService.swift in Sources */,
+				0492788227003AB800A44FED /* DeviceListViewModel.swift in Sources */,
+				04927870270039E800A44FED /* DeviceListCoordinator.swift in Sources */,
+				0492789627003C0900A44FED /* DataMapViewController.swift in Sources */,
+				049278DC2700456B00A44FED /* UITableview+Extension.swift in Sources */,
+				049278672700396800A44FED /* TabCoordinator.swift in Sources */,
+				049278B42700402700A44FED /* APIEndPoint.swift in Sources */,
+				0492791A2700524C00A44FED /* Device.swift in Sources */,
+				049278A627003FD600A44FED /* DataModel.swift in Sources */,
+				049278FD2700478D00A44FED /* Constant.swift in Sources */,
+				041681992700BB93000BCE0C /* UIStoryboard+Extension.swift in Sources */,
+				0492785F2700394D00A44FED /* AppCoordinator.swift in Sources */,
+				049278F1270046DD00A44FED /* DeviceCell.swift in Sources */,
+				049279152700516B00A44FED /* BluetoothMaster.swift in Sources */,
+				0492787D27003A5300A44FED /* DeviceViewController.swift in Sources */,
+				0492788C27003B0700A44FED /* DataListViewModel.swift in Sources */,
+				0492787827003A3600A44FED /* Screens.swift in Sources */,
+				049278C12700406000A44FED /* APIResponse.swift in Sources */,
+				0492782B2700392C00A44FED /* AppDelegate.swift in Sources */,
+				049278AE27003FFA00A44FED /* DeviceModel.swift in Sources */,
+				049278F8270046E800A44FED /* DataCell.swift in Sources */,
+				049278A027003C2200A44FED /* DataMapCoordinator.swift in Sources */,
+				0492789B27003C1300A44FED /* DataMapViewModel.swift in Sources */,
+				049278CC2700409300A44FED /* Reachability.swift in Sources */,
+				0492789127003B3100A44FED /* DataListCoordinator.swift in Sources */,
+				0492782D2700392C00A44FED /* SceneDelegate.swift in Sources */,
+				049278C62700407300A44FED /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049278392700393500A44FED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049278422700393500A44FED /* RoambeeDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049278442700393500A44FED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0492784D2700393500A44FED /* RoambeeDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0492783F2700393500A44FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049278262700392C00A44FED /* RoambeeDemo */;
+			targetProxy = 0492783E2700393500A44FED /* PBXContainerItemProxy */;
+		};
+		0492784A2700393500A44FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049278262700392C00A44FED /* RoambeeDemo */;
+			targetProxy = 049278492700393500A44FED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		049278302700392C00A44FED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049278312700392C00A44FED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		049278352700393400A44FED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049278362700393400A44FED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0492784F2700393500A44FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		049278502700393500A44FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		049278522700393500A44FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJG4L3F345;
+				INFOPLIST_FILE = RoambeeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nidhi.RoambeeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		049278532700393500A44FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJG4L3F345;
+				INFOPLIST_FILE = RoambeeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nidhi.RoambeeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		049278552700393500A44FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJG4L3F345;
+				INFOPLIST_FILE = RoambeeDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nidhi.RoambeeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoambeeDemo.app/RoambeeDemo";
+			};
+			name = Debug;
+		};
+		049278562700393500A44FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJG4L3F345;
+				INFOPLIST_FILE = RoambeeDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nidhi.RoambeeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoambeeDemo.app/RoambeeDemo";
+			};
+			name = Release;
+		};
+		049278582700393500A44FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJG4L3F345;
+				INFOPLIST_FILE = RoambeeDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nidhi.RoambeeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoambeeDemo;
+			};
+			name = Debug;
+		};
+		049278592700393500A44FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MJG4L3F345;
+				INFOPLIST_FILE = RoambeeDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nidhi.RoambeeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoambeeDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		049278222700392C00A44FED /* Build configuration list for PBXProject "RoambeeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0492784F2700393500A44FED /* Debug */,
+				049278502700393500A44FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049278512700393500A44FED /* Build configuration list for PBXNativeTarget "RoambeeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049278522700393500A44FED /* Debug */,
+				049278532700393500A44FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049278542700393500A44FED /* Build configuration list for PBXNativeTarget "RoambeeDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049278552700393500A44FED /* Debug */,
+				049278562700393500A44FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049278572700393500A44FED /* Build configuration list for PBXNativeTarget "RoambeeDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049278582700393500A44FED /* Debug */,
+				049278592700393500A44FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0492781F2700392C00A44FED /* Project object */;
+}
