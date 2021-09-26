@@ -29,10 +29,6 @@ final class DeviceListViewModel {
     func fetchData() {
         
     }
-    
-    func viewDidLoad() {
-        
-    }
 }
 protocol DeviceListViewModelProtocol {
     var didLoad: (() -> Void)? {get set}

@@ -30,7 +30,7 @@ final class DataListCoordinator {
     }
     
     func getPresetnterCount() -> Int {
-        return presenter.viewControllers.count ?? 0
+        return presenter.viewControllers.count
     }
     
     private func showSecondViewController() {

@@ -27,9 +27,7 @@ class DeviceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        viewModel.viewDidLoad()
-        deviceDiscovery.devicesListUpdatedHandler = { [weak self] in
+            deviceDiscovery.devicesListUpdatedHandler = { [weak self] in
             
             print(self?.deviceDiscovery.devices)
         }

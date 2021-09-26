@@ -27,8 +27,6 @@ class DataMapViewController: UIViewController,MKMapViewDelegate {
         super.viewDidLoad()
         
         viewModel?.viewDidLoad()
-        
-        
         showMapData()
     }
     
@@ -46,7 +44,7 @@ class DataMapViewController: UIViewController,MKMapViewDelegate {
             //CLLocationCoordinate2D(latitude: viewModel?.latitude, longitude: viewModel?.longitude)
         
         objectAnnotation.coordinate = pinLocation
-        objectAnnotation.title = "Location"
+        objectAnnotation.title = Constant.pinTitle
         self.mapView?.addAnnotation(objectAnnotation)
     }
 }

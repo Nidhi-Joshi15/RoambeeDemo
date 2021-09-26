@@ -20,7 +20,6 @@ final class Screens {
 
 extension Screens {
     func createFirstViewController() -> UIViewController {
-        
         let viewController = storyboard.instantiateViewController(identifier: "DeviceViewController") as? DeviceViewController
         let viewModel = DeviceListViewModel()
         viewController?.viewModel = viewModel
@@ -29,7 +28,6 @@ extension Screens {
 }
 
 // MARK: - SecondViewController
-
 extension Screens {
     func createSecondViewController() -> UIViewController {
         let viewController = storyboard.instantiateViewController(identifier: "DataListViewController") as! DataListViewController
@@ -38,6 +36,7 @@ extension Screens {
         return viewController
     }
 }
+
 extension Screens {
     func createDataMapViewController(lat: Double, lng: Double) -> UIViewController {
         let viewController = storyboard.instantiateViewController(identifier: "DataMapViewController") as! DataMapViewController

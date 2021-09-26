@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 // Name of the coordinators/stacks
+
 enum ViewControllerItem: Int {
     case first = 0
     case second = 1
@@ -28,6 +29,7 @@ final class TabBarSource: TabBarSourceType {
         let firstIcon = UIImage(named: "dataList")
         let filledFirstIcon = UIImage(named: "dataListSelected")
         self[.first].tabBarItem = UITabBarItem(title: "Device", image: firstIcon, selectedImage: filledFirstIcon)
+        
         let secondIcon = UIImage(named: "device")
         let filledSecondIcon = UIImage(named: "deviceSelected")
         self[.second].tabBarItem = UITabBarItem(title: "Data", image: secondIcon, selectedImage: filledSecondIcon)
@@ -72,7 +74,6 @@ final class TabCoordinator: NSObject {
         tabBarController.viewControllers = source.items
         tabBarController.selectedViewController = source[.first]
         super.init()
-        
         tabBarController.delegate = self
     }
     
@@ -92,7 +93,6 @@ final class TabCoordinator: NSObject {
         if dataListCoordinator == nil {
             dataListCoordinator = DataListCoordinator(presenter: source[.second], screens: screens)
         }
-        
         dataListCoordinator?.start()
     }
 }
@@ -104,7 +104,6 @@ extension TabCoordinator: UITabBarControllerDelegate {
         guard index < source.items.count, let item = ViewControllerItem(rawValue: index) else {
             fatalError("Index out of range")
         }
-        
         switch item {
         case .first:
             showFirstTab()

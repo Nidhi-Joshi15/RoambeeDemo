@@ -9,4 +9,5 @@ import Foundation
 class Constant {
     static var deviceCellIdentifier = "DeviceCell"
     static var dataCellIdentifier = "DataCell"
+    static var pinTitle = "Location"
 }

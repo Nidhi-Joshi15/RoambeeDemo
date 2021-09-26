@@ -64,7 +64,6 @@
 
 /* Begin PBXFileReference section */
 		041681982700BB93000BCE0C /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
-		041681EA27010BEE000BCE0C /* RoambeeDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RoambeeDemo.entitlements; sourceTree = "<group>"; };
 		041681EC27010BEF000BCE0C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		049278272700392C00A44FED /* RoambeeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoambeeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0492782A2700392C00A44FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -166,7 +165,6 @@
 		049278292700392C00A44FED /* RoambeeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				041681EA27010BEE000BCE0C /* RoambeeDemo.entitlements */,
 				0492790827004B6100A44FED /* BlueToothManager */,
 				049278E0270045F300A44FED /* CustomCell */,
 				049278CA2700408600A44FED /* Helper */,

@@ -23,17 +23,12 @@ class DataListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        viewModel?.viewDidLoad()
-        
         setupTableView()
         
         viewModel?.didLoad = { [weak self] in
             self?.dataListTableView?.reloadData()
             self?.refreshControl.endRefreshing()
         }
-        
-        
     }
     
     @objc func refresh(_ sender: AnyObject) {

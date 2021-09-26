@@ -44,10 +44,6 @@ final class DataListViewModel {
             }
         }
     }
-    
-    func viewDidLoad() {
-        
-    }
 }
 protocol DataListViewModelProtocol {
     var didLoad: (() -> Void)? {get set}
