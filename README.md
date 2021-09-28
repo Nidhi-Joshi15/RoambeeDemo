@@ -13,6 +13,8 @@ This project is developed in Swift using MVVM pattern, API client with POP(Proto
 
 Constants are created for the application for the easy localization or any content change. Computed properties are used in the model which will give the leverage to keep the codable keys as it is and access the user required data with ease. Reachabiliy class for network change. APIHelpers are added just to show the other way with swift client to use
 
+It has bluetoothManager to detect nearby bluetooth devices. 
+
 API
 
 ·  GET https://my-json-server.typicode.com/Dhaval3110/locationAPI/db
