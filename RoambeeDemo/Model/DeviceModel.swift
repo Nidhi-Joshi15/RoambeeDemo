@@ -9,6 +9,6 @@ import Foundation
 
 struct DeviceModel: Identifiable {
     let id: String = UUID().uuidString
-    let titl: String
+    let title: String
     let  detail: String
 }

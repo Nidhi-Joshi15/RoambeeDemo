@@ -16,20 +16,18 @@ class DeviceViewController: UIViewController {
     
     
     // MARK: - Properties
-    private var deviceName = UIDevice.current.name {
-        didSet { deviceDiscovery.deviceName = deviceName }
-    }
+    
     
     var viewModel: DeviceListViewModel!
     var coordinator: DeviceListCoordinator?
-    var deviceDiscovery: BluetoothDeviceDiscovery = (UIApplication.shared.delegate as! AppDelegate).deviceDiscovery
+    
     // MARK: - View life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-            deviceDiscovery.devicesListUpdatedHandler = { [weak self] in
-            
-            print(self?.deviceDiscovery.devices)
+        viewModel.fetchData()
+        viewModel.didLoad = { [weak self] in
+            self?.deviceListtableView?.reloadData()
         }
     
     }
@@ -54,8 +52,7 @@ extension DeviceViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-//        let name = bluetoothManager?.peripherals
-        cell.textLabel?.text = "1"
+        cell.textLabel?.text = viewModel.getList(indexPath.row)
         return cell
     }
   
